@@ -1,0 +1,4 @@
+Scenario: I can get all activities for current user
+    Given I log in to app with standard credentials
+    When I send request to get all activities for current user
+    Then I should get "200" in response
